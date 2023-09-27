@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Customized Bootstrap Layout</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        .navbar-top {
+            background-color: #007bff; /* Change background color to blue */
+        }
+
+        .navbar-top .navbar-text {
+            color: #fff; /* Change text color to white */
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .navbar-bottom {
+            background-color: #333; /* Change background color to dark grey */
+        }
+
+        .navbar-bottom .nav-link {
+            color: #fff; /* Change text color to white */
+        }
+
+        .side-container {
+            background-color: #4b4b4b;
+            color: #fff;
+            padding: 15px; /* Increase padding for better visibility */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Center content vertically */
+        }
+
+        .main-container {
+            padding: 15px;
+            height: 100%;
+            text-align: center; /* Center text horizontally */
+        }
+    </style>
+</head>
+<body>
+<!-- Top Navbar -->
+<nav class="navbar navbar-top">
+    <div class="container-fluid">
+        <span class="navbar-text h4">Your Logo/Title</span>
+    </div>
+</nav>
+
+<!-- Bottom Navbar -->
+<nav class="navbar navbar-bottom">
+    <div class="container-fluid">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">MENU</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+            </li>
+        </ul>
+        <ul class="nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">SIGN UP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">LOGIN</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Content Containers (9:1 ratio) -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9 main-container">
+            <!-- Content for the 9:1 container -->
+            <h2>Welcome to Your Website</h2>
+            <p>This is the main content area. Replace this with your content.</p>
+        </div>
+        <div class="col-md-3 side-container">
+            <!-- Apply the custom CSS class here -->
+            <!-- Content for the 1:3 container -->
+            <h3>Explore More</h3>
+            <p>This is the side content area. Replace this with your content.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
