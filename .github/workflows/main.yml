@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        h2, h3, h4 {
+            color: #333;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>TASK LINKS</h2>
+        <h3>Name: Lavanya Shukla</h3>
+        <h3>Registration Number: 21BCE6068</h3>
+        <h3>Batch: Mon, Wed, Friday (7 to 9 am)</h3>
+
+        <h4>BootStrap Tasks:</h4>
+        <table>
+            <tr>
+                <th>Task</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Task 1</td>
+                <td><a href="./BootstrapTask1.html">Link</a></td>
+            </tr>
+            <tr>
+                <td>Task 2</td>
+                <td><a href="./BootstrapTask2.html">Link</a></td>
+            </tr>
+            <tr>
+                <td>Task 3</td>
+                <td><a href="./BootstrapTask3.html">Link</a></td>
+            </tr>
+            <tr>
+                <td>Task 4</td>
+                <td><a href="./BootStrapTask4.html">Link</a></td>
+            </tr>
+            <tr>
+                <td>Task 5</td>
+                <td><a href="./BootStrapTask5.html">Link</a></td>
+            </tr>
+            <tr>
+                <td>Task 6</td>
+                <td><a href="./BootStrapTask6.html">Link</a></td>
+            </tr>
+        </table>
+
+        <h4>JavaScript Tasks:</h4>
+        <table>
+            <tr>
+                <th>Task</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Task 1</td>
+                <td><a href="./javascript1.html">Link</a></td>
+            </tr>
+            <tr>
+                <td>Task 2</td>
+                <td><a href="./javascript2.html">Link</a></td>
+            </tr>
+            <tr>
+                <td>Task 3</td>
+                <td><a href="./javascript3.html">Link</a></td>
+            </tr>
+            <tr>
+                <td>Task 4</td>
+                <td><a href="./javascript4.html">Link</a></td>
+            </tr>
+            <tr>
+                <td>Task 5</td>
+                <td><a href="./javascript5.html">Link</a></td>
+            </tr>
+            <tr>
+                <td>Task 6</td>
+                <td><a href="./javascript6.html">Link</a></td>
+            </tr>
+            <tr>
+                <td>Task 7</td>
+                <td><a href="./javascript7.html">Link</a></td>
+            </tr>
+            <tr>
+                <td>Task 8</td>
+                <td><a href="./javascript8.html">Link</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
