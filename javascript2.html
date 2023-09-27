@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Sorter</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
 
+        header {
+            background-color: #007BFF;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px 20px;
+            text-align: center;
+            color: #fff;
+            border-radius: 10px 10px 0 0;
+        }
+
+        form {
+            background-color: #ffffff;
+            border-radius: 0 0 10px 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 250px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            outline: none;
+        }
+
+        input[type="button"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+
+        #RESULT {
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        #fin {
+            font-size: 14px;
+            margin-top: 20px;
+            text-align: center;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>    
+        <h1>String Sorter</h1>
+    </header>
+    <form id="calc">
+        <div>
+            <label for="inpt">Input String:</label>
+            <input type="text" id="inpt" name="inpt" placeholder="Enter text" required>
+            <input type="button" value="Sort" onclick="sort()">
+        </div>
+    </form>
+    <p id="RESULT"></p>
+    <p id="fin">By Lavanya Shukla</p>
+    <script>    
+        function sort() {
+            var str = document.getElementById("inpt").value;
+            const sortedstr = str.split('').sort().join('');
+            document.getElementById("RESULT").innerHTML = "Sorted text is: " + sortedstr;
+        }
+    </script>
+</body>
+</html>
